@@ -46,37 +46,3 @@ INNER JOIN alumno_se_matricula_asignatura AS asma ON p.id = asma.id_alumno
 INNER JOIN asignatura AS a ON asma.id_asignatura = a.id
 WHERE a.id = 2;
 
-#3.2
-DELIMITER //
-USE universidad;
-CREATE PROCEDURE consulta_e(IN nombre_alumno VARCHAR(255))
-BEGIN
-    SELECT CONCAT_WS('', persona.nombre, persona.apellido1, persona.apellido2) AS Alumno,
-           asignatura.nombre AS Asignatura
-    FROM alumno_se_matricula_asignatura 
-    JOIN asignatura ON alumno_se_matricula_asignatura.id_asignatura = asignatura.id 
-    JOIN persona ON alumno_se_matricula_asignatura.id_alumno = persona.id
-    WHERE CONCAT_WS('', persona.nombre, persona.apellido1, persona.apellido2) = nombre_alumno;
-END //
-CREATE PROCEDURE consulta_g(IN nombre_asignatura VARCHAR(255))
-BEGIN
-    SELECT CONCAT_WS('', p.nombre, p.apellido1, COALESCE(p.apellido2, '')) AS Alumno,
-           a.nombre AS Asignatura
-    FROM persona AS p
-    INNER JOIN alumno_se_matricula_asignatura AS asma ON p.id = asma.id_alumno
-    INNER JOIN asignatura AS a ON asma.id_asignatura = a.id
-    WHERE a.nombre = nombre_asignatura;
-END //
-CALL consulta_e('SalvadorSánchezPérez');
-CALL consulta_g('Cálculo');
-
-#3.3
-CREATE VIEW
-vista_consulta_a AS
-SELECT nombre, apellido1, apellido2
-FROM persona
-WHERE tipo = 'alumno';
-
-SELECT * FROM vista_consulta_a;
-
-
