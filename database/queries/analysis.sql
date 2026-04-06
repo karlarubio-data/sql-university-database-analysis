@@ -92,3 +92,16 @@ WHERE a.id = 2;
 
 -- Observation:
 -- This query helps analyze course demand and student distribution.
+
+-- =========================================
+-- Question 8: Which courses have the highest number of students?
+-- =========================================
+
+SELECT a.nombre, COUNT(*) AS total_students
+FROM alumno_se_matricula_asignatura AS asma
+JOIN asignatura AS a ON asma.id_asignatura = a.id
+GROUP BY a.nombre
+ORDER BY total_students DESC;
+
+-- Observation:
+-- Some courses are significantly more popular than others.
