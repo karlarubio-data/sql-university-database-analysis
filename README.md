@@ -1,31 +1,51 @@
-# University Database Analysis
+# 🎓 University Database Analysis
 
-## Context
-This project is based on a university database that includes students, courses, and academic records.
+## 📌 Context
+This project is based on a university database that includes students, courses, and enrollments.
+
+I approached this dataset as if I were working as a data analyst supporting academic decision-making.
+
+---
 
 ## 🎯 Objective
-The goal is to analyze academic data to better understand student performance and course distribution.
+The goal is to analyze student performance, course demand, and enrollment patterns to identify useful insights.
 
-## 📂 Database Structure
-The database includes tables such as:
+---
+
+## 📂 Database Overview
+The database includes:
 - Students
 - Courses
 - Enrollments
+- Departments
 
-## 🔍 Analysis
+---
+
+## 🔍 Key Questions
+- Which courses have the highest and lowest average grades?
+- Which departments have the most students?
+- Are there patterns in student performance?
+
+---
+
+## 📊 Analysis
 Using SQL queries, I explored:
 
-- Student performance by course
-- Average grades by department
-- Course enrollment patterns
+- Average grades per course
+- Student distribution by department
+- Enrollment trends
 
-## 📊 Key Insights
-- Some courses show consistently higher average grades
-- Certain departments have higher student concentration
-- Enrollment patterns suggest differences in course demand
+---
+
+## 💡 Insights
+- Some courses consistently show lower performance
+- Certain departments concentrate most students
+- Enrollment patterns vary significantly across courses
+
+---
 
 ## 📈 Business Value
-This type of analysis can help universities:
+This type of analysis can help:
 - Improve academic planning
-- Identify student performance trends
+- Identify student performance issues
 - Optimize course offerings
