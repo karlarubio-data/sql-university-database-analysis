@@ -54,6 +54,6 @@ It includes tables such as:
 ---
 
 ## Next Steps
-Add simple visualizations to better communicate results
-Build a dashboard for interactive analysis
-Extend the dataset to analyze trends over time
+* Add simple visualizations to better communicate results
+* Build a dashboard for interactive analysis
+* Extend the dataset to analyze trends over time
