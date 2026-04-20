@@ -1,51 +1,59 @@
 # 🎓 University Database Analysis
 
-## 📌 Context
-This project is based on a university database that includes students, courses, and enrollments.
-
-I approached this dataset as if I were working as a data analyst supporting academic decision-making.
-
+## Project Overview
+This project analyzes a university database.
+The goal is to understand student behavior, course demand, and how resources are used.
+It simulates real tasks of a data analyst.
 ---
 
-## 🎯 Objective
-The goal is to analyze student performance, course demand, and enrollment patterns to identify useful insights.
-
+## Business Questions
+* Which courses have more students?
+* Are some classrooms used less than others?
+* How many courses does each student take?
+* Which departments have more demand?
 ---
 
-## 📂 Database Overview
-The database includes:
-- Students
-- Courses
-- Enrollments
-- Departments
-
+## Dataset Description
+The dataset represents a university system.
+It includes tables such as:
+* Students
+* Courses
+* Enrollments
+* Departments
 ---
 
-## 🔍 Key Questions
-- Which courses have the highest and lowest average grades?
-- Which departments have the most students?
-- Are there patterns in student performance?
-
+## Tools & Technologies
+* SQL
+* Data analysis (joins, group by, filters)
 ---
 
-## 📊 Analysis
-Using SQL queries, I explored:
+## Analysis
+### 1. Enrollment Analysis
+* Find courses with more students
+* Compare student numbers between departments
 
-- Average grades per course
-- Student distribution by department
-- Enrollment trends
+### 2. Student Behavior
+* Check how many courses students take
+* Identify common patterns
 
+### 3. Resource Usage
+* Analyze classroom use
+* Detect possible inefficiencies
 ---
 
-## 💡 Insights
-- Some courses consistently show lower performance
-- Certain departments concentrate most students
-- Enrollment patterns vary significantly across courses
-
+## Key Insights
+* Some courses have many more students than others
+* Some classrooms are not used all the time
+* Some students take more courses than average
 ---
 
-## 📈 Business Value
-This type of analysis can help:
-- Improve academic planning
-- Identify student performance issues
-- Optimize course offerings
+## Business Recommendations
+* Increase capacity in popular courses
+* Improve classroom scheduling
+* Monitor students with many courses
+---
+
+## Next Steps
+Add simple visualizations to better communicate results
+Build a dashboard for interactive analysis
+Extend the dataset to analyze trends over time
